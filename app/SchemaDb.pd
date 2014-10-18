@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141353606169877" entityLocationX="421" entityLocationY="83" entityWidth="150" tableName="EducationLevel"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141301178021386" entityLocationX="70" entityLocationY="3" entityWidth="150" tableName="Campaigns"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141301192933126" entityLocationX="269" entityLocationY="4" entityWidth="150" tableName="EducationForms"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141353634387192" entityLocationX="246" entityLocationY="190" entityWidth="150" tableName="CampaignDates"/>
+</datamodel>
