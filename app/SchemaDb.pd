@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141353606169877" entityLocationX="229" entityLocationY="387" entityWidth="150" tableName="EducationLevel"/>
-  <fieldsEntity entityHeight="342" entityIconified="false" entityId="141362229421192" entityLocationX="847" entityLocationY="50" entityWidth="271" tableName="AdmissionVolume"/>
+  <fieldsEntity entityHeight="76" entityIconified="false" entityId="141353606169877" entityLocationX="495" entityLocationY="176" entityWidth="150" tableName="EducationLevel"/>
+  <fieldsEntity entityHeight="342" entityIconified="false" entityId="141362229421192" entityLocationX="870" entityLocationY="20" entityWidth="271" tableName="AdmissionVolume"/>
+  <fieldsEntity entityHeight="100" entityIconified="false" entityId="141482829413970" entityLocationX="239" entityLocationY="28" entityWidth="195" tableName="EducationForms"/>
+  <fieldsEntity entityHeight="77" entityIconified="false" entityId="141482830984155" entityLocationX="468" entityLocationY="49" entityWidth="233" tableName="EducationForm"/>
+  <fieldsEntity entityHeight="101" entityIconified="false" entityId="141482932340758" entityLocationX="233" entityLocationY="140" entityWidth="236" tableName="EducationLevels"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141422665905508" entityLocationX="700" entityLocationY="185" entityWidth="150" tableName="CompetitiveGroup"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141301178021386" entityLocationX="4" entityLocationY="10" entityWidth="150" tableName="Campaigns"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482829413970" entityLocationX="218" entityLocationY="17" entityWidth="195" tableName="EducationForms"/>
-  <fieldsEntity entityHeight="77" entityIconified="false" entityId="141482830984155" entityLocationX="203" entityLocationY="247" entityWidth="233" tableName="EducationForm"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482932340758" entityLocationX="477" entityLocationY="281" entityWidth="236" tableName="EducationLevels"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141422665905508" entityLocationX="699" entityLocationY="123" entityWidth="150" tableName="CompetitiveGroup"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141353634387192" entityLocationX="27" entityLocationY="244" entityWidth="150" tableName="CampaignDates"/>
+  <fieldsEntity entityHeight="239" entityIconified="false" entityId="141505453402807" entityLocationX="429" entityLocationY="286" entityWidth="187" tableName="CampaignDate"/>
+  <fieldsEntity entityHeight="102" entityIconified="false" entityId="141505442352813" entityLocationX="239" entityLocationY="258" entityWidth="150" tableName="CampaignDates"/>
 </datamodel>
