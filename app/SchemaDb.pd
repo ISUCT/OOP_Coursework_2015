@@ -6,6 +6,6 @@
   <fieldsEntity entityHeight="101" entityIconified="false" entityId="141482932340758" entityLocationX="233" entityLocationY="140" entityWidth="236" tableName="EducationLevels"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141422665905508" entityLocationX="700" entityLocationY="185" entityWidth="150" tableName="CompetitiveGroup"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141301178021386" entityLocationX="4" entityLocationY="10" entityWidth="150" tableName="Campaigns"/>
-  <fieldsEntity entityHeight="239" entityIconified="false" entityId="141505453402807" entityLocationX="429" entityLocationY="286" entityWidth="187" tableName="CampaignDate"/>
+  <fieldsEntity entityHeight="239" entityIconified="false" entityId="141505453402807" entityLocationX="452" entityLocationY="293" entityWidth="187" tableName="CampaignDate"/>
   <fieldsEntity entityHeight="102" entityIconified="false" entityId="141505442352813" entityLocationX="239" entityLocationY="258" entityWidth="150" tableName="CampaignDates"/>
 </datamodel>

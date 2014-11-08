@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482903048912" entityLocationX="831" entityLocationY="229" entityWidth="150" tableName="COMPETITIVEGROUPITEM"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482887316417" entityLocationX="10" entityLocationY="20" entityWidth="150" tableName="ADMISSIONINFO"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482892084841" entityLocationX="222" entityLocationY="14" entityWidth="150" tableName="ADMISSIONVOLUME"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482907544397" entityLocationX="586" entityLocationY="441" entityWidth="150" tableName="TARGETORGANISATIONS"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482889517994" entityLocationX="201" entityLocationY="245" entityWidth="150" tableName="COMPETITIVEGROUPS"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482907543813" entityLocationX="757" entityLocationY="440" entityWidth="150" tableName="TARGETORGANISATION"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482889517420" entityLocationX="405" entityLocationY="219" entityWidth="150" tableName="COMPETITIVEGROUP"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482901685755" entityLocationX="631" entityLocationY="226" entityWidth="150" tableName="ITEMS"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482903048912" entityLocationX="831" entityLocationY="229" entityWidth="214" tableName="COMPETITIVEGROUPITEM"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482887316417" entityLocationX="-6" entityLocationY="24" entityWidth="184" tableName="ADMISSIONINFO"/>
+  <fieldsEntity entityHeight="330" entityIconified="false" entityId="141482892084841" entityLocationX="434" entityLocationY="7" entityWidth="279" tableName="ADMISSIONVOLUME"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141543957071120" entityLocationX="848" entityLocationY="456" entityWidth="184" tableName="EntranceTestItem"/>
+  <fieldsEntity entityHeight="94" entityIconified="false" entityId="141543813064223" entityLocationX="650" entityLocationY="348" entityWidth="150" tableName="Items"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141482889517994" entityLocationX="199" entityLocationY="229" entityWidth="198" tableName="COMPETITIVEGROUPS"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141543512321526" entityLocationX="203" entityLocationY="7" entityWidth="197" tableName="AdmissionVolumeInfo"/>
+  <fieldsEntity entityHeight="86" entityIconified="false" entityId="141543949145614" entityLocationX="633" entityLocationY="483" entityWidth="193" tableName="EntranceTestItems"/>
+  <fieldsEntity entityHeight="105" entityIconified="false" entityId="141482889517420" entityLocationX="428" entityLocationY="352" entityWidth="192" tableName="COMPETITIVEGROUP"/>
 </datamodel>
