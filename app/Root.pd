@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
   <fieldsEntity entityHeight="156" entityIconified="false" entityId="141505188330082" entityLocationX="411" entityLocationY="16" entityWidth="150" tableName="CAMPAIGNS"/>
-  <fieldsEntity entityHeight="97" entityIconified="false" entityId="141505196131770" entityLocationX="423" entityLocationY="192" entityWidth="150" tableName="ADMISSIONINFO"/>
+  <fieldsEntity entityHeight="97" entityIconified="false" entityId="141505196131770" entityLocationX="410" entityLocationY="177" entityWidth="150" tableName="ADMISSIONINFO"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141505131670119" entityLocationX="209" entityLocationY="128" entityWidth="150" tableName="PackageData"/>
   <fieldsEntity entityHeight="100" entityIconified="false" entityId="141505141669358" entityLocationX="11" entityLocationY="11" entityWidth="150" tableName="Root"/>
   <fieldsEntity entityHeight="107" entityIconified="false" entityId="141505146623394" entityLocationX="211" entityLocationY="3" entityWidth="150" tableName="AuthData"/>
