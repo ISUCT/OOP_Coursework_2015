@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
-  <fieldsEntity entityHeight="92" entityIconified="false" entityId="141785809304888" entityLocationX="858" entityLocationY="1063" entityWidth="222" tableName="ENTRANCETESTSUBJECT"/>
+  <fieldsEntity entityHeight="92" entityIconified="false" entityId="141785809304888" entityLocationX="905" entityLocationY="1039" entityWidth="222" tableName="ENTRANCETESTSUBJECT"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141785268842917" entityLocationX="639" entityLocationY="1062" entityWidth="187" tableName="EntranceTestResult"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141605430093015" entityLocationX="10" entityLocationY="49" entityWidth="150" tableName="Applcations"/>
   <fieldsEntity entityHeight="106" entityIconified="false" entityId="141790307423131" entityLocationX="1112" entityLocationY="1164" entityWidth="191" tableName="InstitutionDocument"/>
@@ -32,14 +32,17 @@
   <fieldsEntity entityHeight="227" entityIconified="false" entityId="141799075568026" entityLocationX="1343" entityLocationY="1915" entityWidth="253" tableName="AcademicDiplomaDocument"/>
   <fieldsEntity entityHeight="89" entityIconified="false" entityId="141626608969556" entityLocationX="402" entityLocationY="94" entityWidth="290" tableName="selectedcompetitivegroupitems"/>
   <fieldsEntity entityHeight="189" entityIconified="false" entityId="141790649237022" entityLocationX="1063" entityLocationY="1673" entityWidth="253" tableName="SchoolCertificateDocument"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141790350413474" entityLocationX="400" entityLocationY="1305" entityWidth="222" tableName="ApplicationDocuments"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141790350413474" entityLocationX="385" entityLocationY="1310" entityWidth="222" tableName="ApplicationDocuments"/>
   <fieldsEntity entityHeight="158" entityIconified="false" entityId="141626681577396" entityLocationX="792" entityLocationY="190" entityWidth="217" tableName="FinSourceAndEduForm"/>
   <fieldsEntity entityHeight="77" entityIconified="false" entityId="141626593121528" entityLocationX="683" entityLocationY="8" entityWidth="253" tableName="selectedcompetitivegroup"/>
   <fieldsEntity entityHeight="87" entityIconified="false" entityId="141785156539553" entityLocationX="399" entityLocationY="1060" entityWidth="207" tableName="EntranceTestResults"/>
   <fieldsEntity entityHeight="361" entityIconified="false" entityId="141616795549683" entityLocationX="182" entityLocationY="6" entityWidth="193" tableName="Applcation"/>
   <fieldsEntity entityHeight="91" entityIconified="false" entityId="141626667228298" entityLocationX="544" entityLocationY="190" entityWidth="227" tableName="FinSourceAndEduForms"/>
   <fieldsEntity entityHeight="190" entityIconified="false" entityId="141799128798195" entityLocationX="1342" entityLocationY="2150" entityWidth="279" tableName="SchoolCertificateBasicDocument"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141803948904832" entityLocationX="75" entityLocationY="1489" entityWidth="150" tableName="DocumentTypesDict"/>
   <fieldsEntity entityHeight="86" entityIconified="false" entityId="141626584284170" entityLocationX="402" entityLocationY="3" entityWidth="254" tableName="selectedcompetitivegroups"/>
   <fieldsEntity entityHeight="142" entityIconified="false" entityId="141790446982582" entityLocationX="872" entityLocationY="1304" entityWidth="159" tableName="EgeDocument"/>
+  <fieldsEntity entityHeight="90" entityIconified="false" entityId="141804207628527" entityLocationX="375" entityLocationY="2868" entityWidth="230" tableName="IndividualAchievements"/>
+  <fieldsEntity entityHeight="126" entityIconified="false" entityId="141804241283688" entityLocationX="637" entityLocationY="2870" entityWidth="222" tableName="IndividualAchievement"/>
   <fieldsEntity entityHeight="142" entityIconified="false" entityId="141755224743170" entityLocationX="1104" entityLocationY="803" entityWidth="225" tableName="AllowEducationDocument"/>
 </datamodel>
