@@ -10,18 +10,26 @@
   <fieldsEntity entityHeight="75" entityIconified="false" entityId="141753783410816" entityLocationX="1293" entityLocationY="557" entityWidth="188" tableName="SubjectsBriefData"/>
   <fieldsEntity entityHeight="157" entityIconified="false" entityId="141626638274612" entityLocationX="402" entityLocationY="188" entityWidth="124" tableName="Entrant"/>
   <fieldsEntity entityHeight="186" entityIconified="false" entityId="141769466493327" entityLocationX="884" entityLocationY="790" entityWidth="180" tableName="CustomDocument"/>
+  <fieldsEntity entityHeight="258" entityIconified="false" entityId="141798647499963" entityLocationX="1067" entityLocationY="2146" entityWidth="259" tableName="MiddleEduDiplomaDocument"/>
   <fieldsEntity entityHeight="174" entityIconified="false" entityId="141769375208734" entityLocationX="1353" entityLocationY="731" entityWidth="198" tableName="DisabilityDocument"/>
   <fieldsEntity entityHeight="90" entityIconified="false" entityId="141790613577728" entityLocationX="669" entityLocationY="1673" entityWidth="182" tableName="EduDocuments"/>
-  <fieldsEntity entityHeight="200" entityIconified="false" entityId="141790706631765" entityLocationX="1067" entityLocationY="1877" entityWidth="250" tableName="HighEduDiplomaDocument"/>
+  <fieldsEntity entityHeight="259" entityIconified="false" entityId="141790706631765" entityLocationX="1067" entityLocationY="1877" entityWidth="250" tableName="HighEduDiplomaDocument"/>
   <fieldsEntity entityHeight="173" entityIconified="false" entityId="141753695484306" entityLocationX="881" entityLocationY="543" entityWidth="214" tableName="OlympicTotalDocument"/>
   <fieldsEntity entityHeight="62" entityIconified="false" entityId="141755153520362" entityLocationX="1107" entityLocationY="730" entityWidth="169" tableName="BenefitDocument"/>
   <fieldsEntity entityHeight="105" entityIconified="false" entityId="141785832349194" entityLocationX="863" entityLocationY="1163" entityWidth="177" tableName="ResultDocument"/>
   <fieldsEntity entityHeight="69" entityIconified="false" entityId="141790614164690" entityLocationX="875" entityLocationY="1673" entityWidth="161" tableName="EduDocument"/>
+  <fieldsEntity entityHeight="244" entityIconified="false" entityId="141798899016353" entityLocationX="1068" entityLocationY="2420" entityWidth="223" tableName="BasicDiplomaDocument"/>
+  <fieldsEntity entityHeight="169" entityIconified="false" entityId="141799545926640" entityLocationX="1353" entityLocationY="2374" entityWidth="206" tableName="EduCustomDocument"/>
   <fieldsEntity entityHeight="71" entityIconified="false" entityId="141626623043419" entityLocationX="705" entityLocationY="98" entityWidth="279" tableName="selectedcompetitivegroupitem"/>
   <fieldsEntity entityHeight="55" entityIconified="false" entityId="141754974024940" entityLocationX="883" entityLocationY="730" entityWidth="195" tableName="MedicalDocuments"/>
+  <fieldsEntity entityHeight="108" entityIconified="false" entityId="141799743739855" entityLocationX="673" entityLocationY="2515" entityWidth="181" tableName="StudentDocument"/>
+  <fieldsEntity entityHeight="156" entityIconified="false" entityId="141799705528775" entityLocationX="670" entityLocationY="2321" entityWidth="214" tableName="MilitaryCardDocument"/>
+  <fieldsEntity entityHeight="88" entityIconified="false" entityId="141799763393364" entityLocationX="669" entityLocationY="2717" entityWidth="187" tableName="CustomDocuments"/>
   <fieldsEntity entityHeight="125" entityIconified="false" entityId="141643541672968" entityLocationX="401" entityLocationY="350" entityWidth="264" tableName="ApplicationCommonBenefit"/>
+  <fieldsEntity entityHeight="231" entityIconified="false" entityId="141798965081569" entityLocationX="1344" entityLocationY="1674" entityWidth="304" tableName="IncomplHighEduDiplomaDocument"/>
   <fieldsEntity entityHeight="60" entityIconified="false" entityId="141643572840736" entityLocationX="676" entityLocationY="352" entityWidth="184" tableName="DocumentReason"/>
   <fieldsEntity entityHeight="138" entityIconified="false" entityId="141769424815086" entityLocationX="1350" entityLocationY="915" entityWidth="189" tableName="MedicalDocument"/>
+  <fieldsEntity entityHeight="227" entityIconified="false" entityId="141799075568026" entityLocationX="1343" entityLocationY="1915" entityWidth="253" tableName="AcademicDiplomaDocument"/>
   <fieldsEntity entityHeight="89" entityIconified="false" entityId="141626608969556" entityLocationX="402" entityLocationY="94" entityWidth="290" tableName="selectedcompetitivegroupitems"/>
   <fieldsEntity entityHeight="189" entityIconified="false" entityId="141790649237022" entityLocationX="1063" entityLocationY="1673" entityWidth="253" tableName="SchoolCertificateDocument"/>
   <fieldsEntity entityHeight="200" entityIconified="false" entityId="141790350413474" entityLocationX="400" entityLocationY="1305" entityWidth="222" tableName="ApplicationDocuments"/>
@@ -30,6 +38,7 @@
   <fieldsEntity entityHeight="87" entityIconified="false" entityId="141785156539553" entityLocationX="399" entityLocationY="1060" entityWidth="207" tableName="EntranceTestResults"/>
   <fieldsEntity entityHeight="361" entityIconified="false" entityId="141616795549683" entityLocationX="182" entityLocationY="6" entityWidth="193" tableName="Applcation"/>
   <fieldsEntity entityHeight="91" entityIconified="false" entityId="141626667228298" entityLocationX="544" entityLocationY="190" entityWidth="227" tableName="FinSourceAndEduForms"/>
+  <fieldsEntity entityHeight="190" entityIconified="false" entityId="141799128798195" entityLocationX="1342" entityLocationY="2150" entityWidth="279" tableName="SchoolCertificateBasicDocument"/>
   <fieldsEntity entityHeight="86" entityIconified="false" entityId="141626584284170" entityLocationX="402" entityLocationY="3" entityWidth="254" tableName="selectedcompetitivegroups"/>
   <fieldsEntity entityHeight="142" entityIconified="false" entityId="141790446982582" entityLocationX="872" entityLocationY="1304" entityWidth="159" tableName="EgeDocument"/>
   <fieldsEntity entityHeight="142" entityIconified="false" entityId="141755224743170" entityLocationX="1104" entityLocationY="803" entityWidth="225" tableName="AllowEducationDocument"/>
