@@ -6,5 +6,5 @@
   <fieldsEntity entityHeight="56" entityIconified="false" entityId="141505131670119" entityLocationX="209" entityLocationY="128" entityWidth="150" tableName="PackageData"/>
   <fieldsEntity entityHeight="53" entityIconified="false" entityId="141804995937759" entityLocationX="411" entityLocationY="395" entityWidth="203" tableName="RECOMMENDEDLISTS"/>
   <fieldsEntity entityHeight="100" entityIconified="false" entityId="141505141669358" entityLocationX="11" entityLocationY="11" entityWidth="150" tableName="Root"/>
-  <fieldsEntity entityHeight="107" entityIconified="false" entityId="141505146623394" entityLocationX="211" entityLocationY="3" entityWidth="150" tableName="AuthData"/>
+  <fieldsEntity entityHeight="107" entityIconified="false" entityId="141505146623394" entityLocationX="205" entityLocationY="3" entityWidth="150" tableName="AuthData"/>
 </datamodel>
