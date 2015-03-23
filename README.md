@@ -1,2 +1,2 @@
 # OOP_Coursework_2015
-Агеева Татьяна 2-47
+Ageeva Tatiana 2-47
