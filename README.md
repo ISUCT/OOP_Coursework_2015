@@ -1,1 +1,2 @@
-# OOP_Coursework_2015
+# My course work!
+Semenov Alexey
