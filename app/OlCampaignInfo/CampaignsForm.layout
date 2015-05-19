@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="364px" prefWidth="686px"/>
+  <ModelGrid cursor="0" data="QCampaigns" name="modelGrid" parent="view" prefHeight="260px" prefWidth="656px">
+    <AnchorsPaneConstraints height="260px" left="20px" top="20px" width="656px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="uid" name="colUid" title="ИД" width="124px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="yearstart" name="colYearstart" title="Год начала" width="124px">
+      <ModelDate dateFormat="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="yearend" name="colYearend" title="Год завершения" width="124px">
+      <ModelDate dateFormat="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="name" name="colName" title="Название" width="125px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+    <ModelGridColumn field="statusid" name="colStatusid" title="ИД статуса" width="124px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="button" parent="view" prefHeight="20px" prefWidth="70px" text="button">
+    <AnchorsPaneConstraints bottom="34px" height="20px" right="36px" width="70px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="20px" prefWidth="70px" text="Save">
+    <AnchorsPaneConstraints bottom="34px" height="20px" right="126px" width="70px"/>
+  </Button>
+</layout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <Button cursor="0" name="button" parent="view" prefHeight="40px" prefWidth="360px" text="Списки лиц, рекомендованных к зачислению">
+    <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="220px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="40px" prefWidth="360px" text="Сведения о приемных кампаниях">
+    <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="20px"/>
+  </Button>
+  <Button cursor="0" name="button2" parent="view" prefHeight="40px" prefWidth="360px" text="Сведения об объеме и структуре приема">
+    <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="70px"/>
+  </Button>
+  <Button cursor="0" name="button3" parent="view" prefHeight="40px" prefWidth="360px" text="Заявления абитуриентов">
+    <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="120px"/>
+  </Button>
+  <Button cursor="0" name="button4" parent="view" prefHeight="40px" prefWidth="360px" text="Списки заявлений абитуриентов&#10; включенных в приказ">
+    <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="170px"/>
+  </Button>
+</layout>

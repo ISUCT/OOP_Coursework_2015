@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><datamodel datamodelDbId="null">
-  <fieldsEntity entityHeight="86" entityIconified="false" entityId="141816090853985" entityLocationX="794" entityLocationY="8" entityWidth="153" tableName="APPLICATION"/>
-  <fieldsEntity entityHeight="93" entityIconified="false" entityId="141816097741432" entityLocationX="797" entityLocationY="105" entityWidth="150" tableName="FINSOURCEANDEDUFORMS"/>
-  <fieldsEntity entityHeight="76" entityIconified="false" entityId="141816069320067" entityLocationX="276" entityLocationY="17" entityWidth="195" tableName="RECOMMENDEDLIST"/>
-  <fieldsEntity entityHeight="160" entityIconified="false" entityId="141816100537111" entityLocationX="970" entityLocationY="111" entityWidth="150" tableName="FINSOURCEANDEDUFORM"/>
-  <fieldsEntity entityHeight="60" entityIconified="false" entityId="141816082482921" entityLocationX="635" entityLocationY="12" entityWidth="115" tableName="RECLIST"/>
-  <fieldsEntity entityHeight="62" entityIconified="false" entityId="141804991356550" entityLocationX="33" entityLocationY="15" entityWidth="200" tableName="RecommendedLists"/>
-  <fieldsEntity entityHeight="91" entityIconified="false" entityId="141816080646073" entityLocationX="488" entityLocationY="14" entityWidth="126" tableName="RECLISTS"/>
-</datamodel>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <ModelGrid cursor="0" data="QApplcations" name="modelGrid" parent="view" prefHeight="230px" prefWidth="300px">
+    <AnchorsPaneConstraints height="230px" left="30px" top="20px" width="300px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="uid" name="colUid" title="colUid" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="applcationnumber" name="colApplcationnumber" title="colApplcationnumber" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="registrationdata" name="colRegistrationdata" title="colRegistrationdata" width="75px">
+      <ModelDate dateFormat="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="lastdenydata" name="colLastdenydata" title="colLastdenydata" width="75px">
+      <ModelDate dateFormat="dd.MM.yyyy HH:mm:ss.SSS"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="needhostel" name="colNeedhostel" title="colNeedhostel" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="statusid" name="colStatusid" title="colStatusid" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="statuscomment" name="colStatuscomment" title="colStatuscomment" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+    <ModelGridColumn field="priority" name="colPriority" title="colPriority" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="individualachievements" name="colIndividualachievements" title="colIndividualachievements" width="75px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>
