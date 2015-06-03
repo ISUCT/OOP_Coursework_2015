@@ -20,17 +20,17 @@ public class QWE {
         return y;        
     }
     
-    public  ArrayList<Float> tor(){
+    public  ArrayList<Float> tor(double a, double b){
         ArrayList<Float> y= new ArrayList<Float>();
-        double a = 2;
-        double b = 4;
+//        double a = 2;
+//        double b = 4;
         y.add(singleValue(a, b));
         return y;            
     }
     
     public static void main (String[] args) {
     		QWE my = new QWE ();
-    		ArrayList<Float> res=my.tor();
+    		ArrayList<Float> res=my.tor(3,5);
     		for(int i=0; i<res.size(); i=i+1){
                 String myStr = String.format("результат вычислений для x=%,.0f",res.get(i));
     		System.out.println(myStr);

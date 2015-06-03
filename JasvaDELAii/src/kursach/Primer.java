@@ -16,6 +16,22 @@ public class Primer extends javax.swing.JFrame {
      */
     public Primer() {
         initComponents();
+        
+    }
+    
+    private void my(){
+
+        String a = jTextField4.getText();
+        String b = jTextField5.getText();
+        String rez = jTextField6.getText();
+        double A = Double.parseDouble(a);
+        double B = Double.parseDouble(b);
+        //double Rez = Double.parseDouble(rez);
+        double q;
+        q = A + B;        
+        System.out.println("rez = " + rez);
+        System.out.print("q = " + q);
+        jTextField6.setText(Double.toString(q));
     }
 
     /**
@@ -186,10 +202,26 @@ public class Primer extends javax.swing.JFrame {
                 jTextField4ActionPerformed(evt);
             }
         });
+        jTextField4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField4KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField4KeyTyped(evt);
+            }
+        });
 
         jTextField5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField5ActionPerformed(evt);
+            }
+        });
+        jTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField5KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField5KeyTyped(evt);
             }
         });
 
@@ -281,22 +313,27 @@ public class Primer extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        String a = jTextField4.getText();
-        String b = jTextField5.getText();
-        String rez = jTextField6.getText();
-        //try{
-        //}catch
-        
+//        String a = jTextField4.getText();
+//        String b = jTextField5.getText();
+//        String rez = jTextField6.getText();
+//        double A = Double.parseDouble(a);
+//        double B = Double.parseDouble(b);
+//        double q = A + B;        
+//        System.out.println("rez = " + rez);
+//        System.out.print("q = " + q);
+//        jTextField6.setText(Double.toString(q));    
+        calc();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
+        calc();
     }//GEN-LAST:event_jTextField4ActionPerformed
 
     private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
         // TODO add your handling code here:
+        calc();
     }//GEN-LAST:event_jTextField5ActionPerformed
 
     private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
@@ -306,6 +343,25 @@ public class Primer extends javax.swing.JFrame {
     private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField4KeyTyped
+        // TODO add your handling code here:
+        calc();
+    }//GEN-LAST:event_jTextField4KeyTyped
+
+    private void jTextField4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField4KeyPressed
+        // TODO add your handling code here:
+        calc();
+    }//GEN-LAST:event_jTextField4KeyPressed
+
+    private void jTextField5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField5KeyTyped
+
+    private void jTextField5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField5KeyPressed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jTextField5KeyPressed
 
     /**
      * @param args the command line arguments
@@ -343,6 +399,19 @@ public class Primer extends javax.swing.JFrame {
     }
 double a;
 double b;
+
+private void calc(){
+    String a = jTextField4.getText();
+        String b = jTextField5.getText();
+        String rez = jTextField6.getText();
+        double A = Double.parseDouble(a);
+        double B = Double.parseDouble(b);
+        double q = A + B;        
+        System.out.println("rez = " + rez);
+        System.out.print("q = " + q);
+        jTextField6.setText(Double.toString(q));  
+}
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
@@ -364,3 +433,4 @@ double b;
     private javax.swing.JTextField jTextField6;
     // End of variables declaration//GEN-END:variables
 }
+

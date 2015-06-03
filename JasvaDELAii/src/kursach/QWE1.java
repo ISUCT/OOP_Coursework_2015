@@ -113,13 +113,13 @@ private ArrayList<Float> rez;
         String prev = jTextArea1.getText();
         
         try {
-        double A = Double.parseDouble(a);
-        double B = Double.parseDouble(b);
+        double aA = Double.parseDouble(a);
+        double aB = Double.parseDouble(b);
         QWE my = new QWE();
-        rez = my.tor(A, B);
+        rez = my.tor(aA, aB);
         String sResult = "";
         for (float y:rez){
-                sResult += String.format("a=%.2f b=%.2f y=%.2f",A, B, y);
+                sResult += String.format("a=%.2f b=%.2f y=%.2f",aA, aB, y);
                 sResult+="\r\n";
             }
             jTextArea1.setText(sResult);

@@ -9,64 +9,64 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
+import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
 /**
- *20.05.15
+ *30.05.15
  * @author AlexBo$$
  */
 public class Kursach extends javax.swing.JFrame {
-
+    double square;
+    
+    double alLux;
+    double alRatedPpower;
+    double alHeight;
+    double alLamp;
+    Map<String, Integer > formLamp;
+    Map<String, Integer > formPane;
     /**
      * Creates new form Kursach
      */
     public Kursach() {
         super("Program");
         initComponents();
-        jTable1Number5.addActionListener(new AlSample());
-        jTable1Number10.addActionListener(new AlSample());
-        jTable1Number20.addActionListener(new AlSample());
-        jTable1Number30.addActionListener(new AlSample());
-        jTable1Number50.addActionListener(new AlSample());
-        jTable1Number70.addActionListener(new AlSample());
-        jTable1Number100.addActionListener(new AlSample());
-        jTable1Number150.addActionListener(new AlSample());
-        jTable1Number200.addActionListener(new AlSample());
-        jTable1Number300.addActionListener(new AlSample());
-        jTable1Number400.addActionListener(new AlSample());
-        jTable1Number500.addActionListener(new AlSample());
-        jTable1Number600.addActionListener(new AlSample());
-        jTable1Number750.addActionListener(new AlSample());
-        jTable1Number1000.addActionListener(new AlSample());
-        jTable1Number2000.addActionListener(new AlSample());
-        jTable1Number3000.addActionListener(new AlSample());
-        jTable1Number10000.addActionListener(new AlSample());
+        formLamp();
+        formPane();
+        jLux5.addActionListener(new ALLux());
+        jLux10.addActionListener(new ALLux());
+        jLux20.addActionListener(new ALLux());
+        jLux30.addActionListener(new ALLux());
+        jLux50.addActionListener(new ALLux());
+        jLux70.addActionListener(new ALLux());
+        jLux100.addActionListener(new ALLux());
+        jLux150.addActionListener(new ALLux());
+        jLux200.addActionListener(new ALLux());
+        jLux300.addActionListener(new ALLux());
+        jLux400.addActionListener(new ALLux());
+        jLux500.addActionListener(new ALLux());
+        jLux600.addActionListener(new ALLux());
+        jLux750.addActionListener(new ALLux());
+        jLux1000.addActionListener(new ALLux());
+        jLux2000.addActionListener(new ALLux());
+        jLux3000.addActionListener(new ALLux());
+        jLux10000.addActionListener(new ALLux());
        
-        jTable2Number40.addActionListener(new AlSample());
-        jTable2Number60.addActionListener(new AlSample());
-        jTable2Number80.addActionListener(new AlSample());
-        jTable2Number100.addActionListener(new AlSample());
-        jTable2Number150.addActionListener(new AlSample());
-        jTable2Number200.addActionListener(new AlSample());
+        jRatedPpower40.addActionListener(new ALRatedPpower());
+        jRatedPpower60.addActionListener(new ALRatedPpower());
+        jRatedPpower80.addActionListener(new ALRatedPpower());
+        jRatedPpower100.addActionListener(new ALRatedPpower());
+        jRatedPpower150.addActionListener(new ALRatedPpower());
+        jRatedPpower200.addActionListener(new ALRatedPpower());
         
-        jTable3Number2.addActionListener(new AlSample());
-        jTable3Number3.addActionListener(new AlSample());
-        jTable3Number5.addActionListener(new AlSample());
+        jHeight2.addActionListener(new ALHeight());
+        jHeight3.addActionListener(new ALHeight());
+        jHeight5.addActionListener(new ALHeight());
        
-        jTable4Number1.addActionListener(new AlSample());
-        jTable4Number2.addActionListener(new AlSample());
-        jTable4Number3.addActionListener(new AlSample());
-        jTable4Number4.addActionListener(new AlSample());
-        
-        jTable5Number1.addActionListener(new AlSample());
-        jTable5Number2.addActionListener(new AlSample());
-        
-        jTable6Number1.addActionListener(new AlSample());
-        jTable6Number2.addActionListener(new AlSample());
-        
-        jTable7Number1.addActionListener(new AlSample());
-        jTable7Number2.addActionListener(new AlSample());
-        
+        jLampFluorescent.addActionListener(new ALLamp());
+        jLampFilament.addActionListener(new ALLamp());
+        jLampHalogen.addActionListener(new ALLamp());
+        jLampLed.addActionListener(new ALLamp());        
     }
 
     /**
@@ -91,49 +91,50 @@ public class Kursach extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        jTable3Number2 = new javax.swing.JRadioButton();
-        jTable3Number3 = new javax.swing.JRadioButton();
-        jTable3Number5 = new javax.swing.JRadioButton();
+        jHeight2 = new javax.swing.JRadioButton();
+        jHeight3 = new javax.swing.JRadioButton();
+        jHeight5 = new javax.swing.JRadioButton();
         jPanel4 = new javax.swing.JPanel();
-        jTable1Number5 = new javax.swing.JRadioButton();
-        jTable1Number10 = new javax.swing.JRadioButton();
-        jTable1Number20 = new javax.swing.JRadioButton();
-        jTable1Number30 = new javax.swing.JRadioButton();
-        jTable1Number50 = new javax.swing.JRadioButton();
-        jTable1Number70 = new javax.swing.JRadioButton();
-        jTable1Number150 = new javax.swing.JRadioButton();
-        jTable1Number750 = new javax.swing.JRadioButton();
-        jTable1Number100 = new javax.swing.JRadioButton();
-        jTable1Number200 = new javax.swing.JRadioButton();
-        jTable1Number300 = new javax.swing.JRadioButton();
-        jTable1Number400 = new javax.swing.JRadioButton();
-        jTable1Number500 = new javax.swing.JRadioButton();
-        jTable1Number600 = new javax.swing.JRadioButton();
-        jTable1Number1000 = new javax.swing.JRadioButton();
-        jTable1Number2000 = new javax.swing.JRadioButton();
-        jTable1Number3000 = new javax.swing.JRadioButton();
-        jTable1Number10000 = new javax.swing.JRadioButton();
+        jLux5 = new javax.swing.JRadioButton();
+        jLux10 = new javax.swing.JRadioButton();
+        jLux20 = new javax.swing.JRadioButton();
+        jLux30 = new javax.swing.JRadioButton();
+        jLux50 = new javax.swing.JRadioButton();
+        jLux70 = new javax.swing.JRadioButton();
+        jLux150 = new javax.swing.JRadioButton();
+        jLux750 = new javax.swing.JRadioButton();
+        jLux100 = new javax.swing.JRadioButton();
+        jLux200 = new javax.swing.JRadioButton();
+        jLux300 = new javax.swing.JRadioButton();
+        jLux400 = new javax.swing.JRadioButton();
+        jLux500 = new javax.swing.JRadioButton();
+        jLux600 = new javax.swing.JRadioButton();
+        jLux1000 = new javax.swing.JRadioButton();
+        jLux2000 = new javax.swing.JRadioButton();
+        jLux3000 = new javax.swing.JRadioButton();
+        jLux10000 = new javax.swing.JRadioButton();
         jPanel5 = new javax.swing.JPanel();
-        jTable4Number1 = new javax.swing.JRadioButton();
-        jTable4Number2 = new javax.swing.JRadioButton();
-        jTable4Number3 = new javax.swing.JRadioButton();
-        jTable4Number4 = new javax.swing.JRadioButton();
+        jLampFluorescent = new javax.swing.JRadioButton();
+        jLampFilament = new javax.swing.JRadioButton();
+        jLampHalogen = new javax.swing.JRadioButton();
+        jLampLed = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
-        jTable2Number40 = new javax.swing.JRadioButton();
-        jTable2Number60 = new javax.swing.JRadioButton();
-        jTable2Number80 = new javax.swing.JRadioButton();
-        jTable2Number100 = new javax.swing.JRadioButton();
-        jTable2Number150 = new javax.swing.JRadioButton();
-        jTable2Number200 = new javax.swing.JRadioButton();
-        jButton1 = new javax.swing.JButton();
+        jRatedPpower40 = new javax.swing.JRadioButton();
+        jRatedPpower60 = new javax.swing.JRadioButton();
+        jRatedPpower80 = new javax.swing.JRadioButton();
+        jRatedPpower100 = new javax.swing.JRadioButton();
+        jRatedPpower150 = new javax.swing.JRadioButton();
+        jRatedPpower200 = new javax.swing.JRadioButton();
+        bHistory = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jFormattedTextField1 = new javax.swing.JFormattedTextField();
-        jFormattedTextField2 = new javax.swing.JFormattedTextField();
-        jFormattedTextField3 = new javax.swing.JFormattedTextField();
-        jFormattedTextField4 = new javax.swing.JFormattedTextField();
+        jTextS = new javax.swing.JFormattedTextField();
+        jTextP = new javax.swing.JFormattedTextField();
+        jTextPyd = new javax.swing.JFormattedTextField();
+        jTextN = new javax.swing.JFormattedTextField();
+        bDelete = new javax.swing.JButton();
         jDesktopPane2 = new javax.swing.JDesktopPane();
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
@@ -158,6 +159,7 @@ public class Kursach extends javax.swing.JFrame {
         jFormattedTextField10 = new javax.swing.JFormattedTextField();
         jFormattedTextField11 = new javax.swing.JFormattedTextField();
         jFormattedTextField12 = new javax.swing.JFormattedTextField();
+        jButton1 = new javax.swing.JButton();
         jPanel11 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -190,27 +192,27 @@ public class Kursach extends javax.swing.JFrame {
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Высота"));
 
-        buttonGroup3.add(jTable3Number2);
-        jTable3Number2.setText("2 - 3");
-        jTable3Number2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(jHeight2);
+        jHeight2.setText("2 - 3");
+        jHeight2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable3Number2ActionPerformed(evt);
+                jHeight2ActionPerformed(evt);
             }
         });
 
-        buttonGroup3.add(jTable3Number3);
-        jTable3Number3.setText("3 - 4");
-        jTable3Number3.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(jHeight3);
+        jHeight3.setText("3 - 4");
+        jHeight3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable3Number3ActionPerformed(evt);
+                jHeight3ActionPerformed(evt);
             }
         });
 
-        buttonGroup3.add(jTable3Number5);
-        jTable3Number5.setText("4 - 6");
-        jTable3Number5.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup3.add(jHeight5);
+        jHeight5.setText("4 - 6");
+        jHeight5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable3Number5ActionPerformed(evt);
+                jHeight5ActionPerformed(evt);
             }
         });
 
@@ -220,210 +222,210 @@ public class Kursach extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTable3Number3)
-                    .addComponent(jTable3Number2)
-                    .addComponent(jTable3Number5))
+                    .addComponent(jHeight3)
+                    .addComponent(jHeight2)
+                    .addComponent(jHeight5))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jTable3Number2)
+                .addComponent(jHeight2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable3Number3)
+                .addComponent(jHeight3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable3Number5))
+                .addComponent(jHeight5))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder("Люкс"));
 
-        buttonGroup1.add(jTable1Number5);
-        jTable1Number5.setText("5");
-        jTable1Number5.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jLux5);
+        jLux5.setText("5");
+        jLux5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable1Number5ActionPerformed(evt);
+                jLux5ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jTable1Number10);
-        jTable1Number10.setText("10");
-        jTable1Number10.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jLux10);
+        jLux10.setText("10");
+        jLux10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable1Number10ActionPerformed(evt);
+                jLux10ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jTable1Number20);
-        jTable1Number20.setText("20");
-        jTable1Number20.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jLux20);
+        jLux20.setText("20");
+        jLux20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable1Number20ActionPerformed(evt);
+                jLux20ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jTable1Number30);
-        jTable1Number30.setText("30");
-        jTable1Number30.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jLux30);
+        jLux30.setText("30");
+        jLux30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable1Number30ActionPerformed(evt);
+                jLux30ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jTable1Number50);
-        jTable1Number50.setText("50");
-        jTable1Number50.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup1.add(jLux50);
+        jLux50.setText("50");
+        jLux50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable1Number50ActionPerformed(evt);
+                jLux50ActionPerformed(evt);
             }
         });
 
-        buttonGroup1.add(jTable1Number70);
-        jTable1Number70.setText("70");
+        buttonGroup1.add(jLux70);
+        jLux70.setText("70");
 
-        buttonGroup1.add(jTable1Number150);
-        jTable1Number150.setText("150");
+        buttonGroup1.add(jLux150);
+        jLux150.setText("150");
 
-        buttonGroup1.add(jTable1Number750);
-        jTable1Number750.setText("750");
+        buttonGroup1.add(jLux750);
+        jLux750.setText("750");
 
-        buttonGroup1.add(jTable1Number100);
-        jTable1Number100.setText("100");
+        buttonGroup1.add(jLux100);
+        jLux100.setText("100");
 
-        buttonGroup1.add(jTable1Number200);
-        jTable1Number200.setText("200");
+        buttonGroup1.add(jLux200);
+        jLux200.setText("200");
 
-        buttonGroup1.add(jTable1Number300);
-        jTable1Number300.setText("300");
+        buttonGroup1.add(jLux300);
+        jLux300.setText("300");
 
-        buttonGroup1.add(jTable1Number400);
-        jTable1Number400.setText("400");
+        buttonGroup1.add(jLux400);
+        jLux400.setText("400");
 
-        buttonGroup1.add(jTable1Number500);
-        jTable1Number500.setText("500");
+        buttonGroup1.add(jLux500);
+        jLux500.setText("500");
 
-        buttonGroup1.add(jTable1Number600);
-        jTable1Number600.setText("600");
+        buttonGroup1.add(jLux600);
+        jLux600.setText("600");
 
-        buttonGroup1.add(jTable1Number1000);
-        jTable1Number1000.setText("1000");
+        buttonGroup1.add(jLux1000);
+        jLux1000.setText("1000");
 
-        buttonGroup1.add(jTable1Number2000);
-        jTable1Number2000.setText("2000");
+        buttonGroup1.add(jLux2000);
+        jLux2000.setText("2000");
 
-        buttonGroup1.add(jTable1Number3000);
-        jTable1Number3000.setText("3000");
+        buttonGroup1.add(jLux3000);
+        jLux3000.setText("3000");
 
-        buttonGroup1.add(jTable1Number10000);
-        jTable1Number10000.setText("10000");
+        buttonGroup1.add(jLux10000);
+        jLux10000.setText("10000");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jTable1Number20)
+                .addComponent(jLux20)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number200)
+                .addComponent(jLux200)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number1000))
+                .addComponent(jLux1000))
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jTable1Number30)
+                .addComponent(jLux30)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number300)
+                .addComponent(jLux300)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number2000))
+                .addComponent(jLux2000))
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jTable1Number50)
+                .addComponent(jLux50)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number400)
+                .addComponent(jLux400)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number3000))
+                .addComponent(jLux3000))
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jTable1Number70)
+                .addComponent(jLux70)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number500)
+                .addComponent(jLux500)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable1Number10000))
+                .addComponent(jLux10000))
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTable1Number10)
-                    .addComponent(jTable1Number5))
+                    .addComponent(jLux10)
+                    .addComponent(jLux5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTable1Number100)
+                        .addComponent(jLux100)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTable1Number600))
+                        .addComponent(jLux600))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jTable1Number150)
+                        .addComponent(jLux150)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTable1Number750))))
+                        .addComponent(jLux750))))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number5)
-                    .addComponent(jTable1Number100)
-                    .addComponent(jTable1Number600))
+                    .addComponent(jLux5)
+                    .addComponent(jLux100)
+                    .addComponent(jLux600))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number10)
-                    .addComponent(jTable1Number150)
-                    .addComponent(jTable1Number750))
+                    .addComponent(jLux10)
+                    .addComponent(jLux150)
+                    .addComponent(jLux750))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number20)
-                    .addComponent(jTable1Number200)
-                    .addComponent(jTable1Number1000))
+                    .addComponent(jLux20)
+                    .addComponent(jLux200)
+                    .addComponent(jLux1000))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number30)
-                    .addComponent(jTable1Number300)
-                    .addComponent(jTable1Number2000))
+                    .addComponent(jLux30)
+                    .addComponent(jLux300)
+                    .addComponent(jLux2000))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number50)
-                    .addComponent(jTable1Number400)
-                    .addComponent(jTable1Number3000))
+                    .addComponent(jLux50)
+                    .addComponent(jLux400)
+                    .addComponent(jLux3000))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable1Number70)
-                    .addComponent(jTable1Number500)
-                    .addComponent(jTable1Number10000)))
+                    .addComponent(jLux70)
+                    .addComponent(jLux500)
+                    .addComponent(jLux10000)))
         );
 
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Тип ламп"));
 
-        buttonGroup2.add(jTable4Number1);
-        jTable4Number1.setText("Люминисцентные");
-        jTable4Number1.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(jLampFluorescent);
+        jLampFluorescent.setText("Люминесцентные");
+        jLampFluorescent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable4Number1ActionPerformed(evt);
+                jLampFluorescentActionPerformed(evt);
             }
         });
 
-        buttonGroup2.add(jTable4Number2);
-        jTable4Number2.setText("Накаливания");
-        jTable4Number2.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(jLampFilament);
+        jLampFilament.setText("Накаливания");
+        jLampFilament.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable4Number2ActionPerformed(evt);
+                jLampFilamentActionPerformed(evt);
             }
         });
 
-        buttonGroup2.add(jTable4Number3);
-        jTable4Number3.setText("Галагенные");
-        jTable4Number3.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(jLampHalogen);
+        jLampHalogen.setText("Галогенные");
+        jLampHalogen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable4Number3ActionPerformed(evt);
+                jLampHalogenActionPerformed(evt);
             }
         });
 
-        buttonGroup2.add(jTable4Number4);
-        jTable4Number4.setText("Светодиодные");
-        jTable4Number4.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup2.add(jLampLed);
+        jLampLed.setText("Светодиодные");
+        jLampLed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable4Number4ActionPerformed(evt);
+                jLampLedActionPerformed(evt);
             }
         });
 
@@ -433,73 +435,73 @@ public class Kursach extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTable4Number1)
-                    .addComponent(jTable4Number2)
-                    .addComponent(jTable4Number3)
-                    .addComponent(jTable4Number4))
+                    .addComponent(jLampFluorescent)
+                    .addComponent(jLampFilament)
+                    .addComponent(jLampHalogen)
+                    .addComponent(jLampLed))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jTable4Number1)
+                .addComponent(jLampFluorescent)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable4Number2)
+                .addComponent(jLampFilament)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable4Number3)
+                .addComponent(jLampHalogen)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTable4Number4))
+                .addComponent(jLampLed))
         );
 
         jLabel2.setText("м");
 
         jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder("Номинальная мощность"));
 
-        buttonGroup4.add(jTable2Number40);
-        jTable2Number40.setText("40");
-        jTable2Number40.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower40);
+        jRatedPpower40.setText("40");
+        jRatedPpower40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number40ActionPerformed(evt);
+                jRatedPpower40ActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jTable2Number60);
-        jTable2Number60.setText("60");
-        jTable2Number60.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower60);
+        jRatedPpower60.setText("60");
+        jRatedPpower60.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number60ActionPerformed(evt);
+                jRatedPpower60ActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jTable2Number80);
-        jTable2Number80.setText("80");
-        jTable2Number80.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower80);
+        jRatedPpower80.setText("80");
+        jRatedPpower80.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number80ActionPerformed(evt);
+                jRatedPpower80ActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jTable2Number100);
-        jTable2Number100.setText("100");
-        jTable2Number100.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower100);
+        jRatedPpower100.setText("100");
+        jRatedPpower100.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number100ActionPerformed(evt);
+                jRatedPpower100ActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jTable2Number150);
-        jTable2Number150.setText("150");
-        jTable2Number150.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower150);
+        jRatedPpower150.setText("150");
+        jRatedPpower150.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number150ActionPerformed(evt);
+                jRatedPpower150ActionPerformed(evt);
             }
         });
 
-        buttonGroup4.add(jTable2Number200);
-        jTable2Number200.setText("200");
-        jTable2Number200.addActionListener(new java.awt.event.ActionListener() {
+        buttonGroup4.add(jRatedPpower200);
+        jRatedPpower200.setText("200");
+        jRatedPpower200.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTable2Number200ActionPerformed(evt);
+                jRatedPpower200ActionPerformed(evt);
             }
         });
 
@@ -510,59 +512,89 @@ public class Kursach extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jTable2Number60)
+                        .addComponent(jRatedPpower60)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTable2Number100)
+                        .addComponent(jRatedPpower100)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTable2Number200)
+                        .addComponent(jRatedPpower200)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addComponent(jTable2Number40)
+                        .addComponent(jRatedPpower40)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jTable2Number80)
+                        .addComponent(jRatedPpower80)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jTable2Number150)))
+                        .addComponent(jRatedPpower150)))
                 .addContainerGap())
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable2Number40)
-                    .addComponent(jTable2Number80)
-                    .addComponent(jTable2Number150))
+                    .addComponent(jRatedPpower40)
+                    .addComponent(jRatedPpower80)
+                    .addComponent(jRatedPpower150))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTable2Number60)
-                    .addComponent(jTable2Number100)
-                    .addComponent(jTable2Number200)))
+                    .addComponent(jRatedPpower60)
+                    .addComponent(jRatedPpower100)
+                    .addComponent(jRatedPpower200)))
         );
 
-        jButton1.setText("История");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        bHistory.setText("История");
+        bHistory.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                bHistoryActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("Удельная мощьность");
+        jLabel3.setText("Удельная мощность");
 
-        jLabel4.setText("Мощьность");
+        jLabel4.setText("Мощность");
 
         jLabel5.setText("Количество");
 
-        jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
-        jFormattedTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jTextS.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#.00"))));
+        jTextS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFormattedTextField1ActionPerformed(evt);
+                jTextSActionPerformed(evt);
+            }
+        });
+        jTextS.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextSKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextSKeyTyped(evt);
             }
         });
 
-        jFormattedTextField2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextPActionPerformed(evt);
+            }
+        });
 
-        jFormattedTextField3.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextPyd.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextPyd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextPydActionPerformed(evt);
+            }
+        });
 
-        jFormattedTextField4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextN.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jTextN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextNActionPerformed(evt);
+            }
+        });
+
+        bDelete.setText("Очистить");
+        bDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bDeleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -572,11 +604,26 @@ public class Kursach extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel4)
+                                .addGap(18, 18, 18)
+                                .addComponent(jTextP, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addComponent(jLabel5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jTextN, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextPyd, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jTextS, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel2)
                                 .addGap(26, 26, 26))
@@ -588,22 +635,8 @@ public class Kursach extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jFormattedTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(bHistory, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE)
+                            .addComponent(bDelete, javax.swing.GroupLayout.DEFAULT_SIZE, 96, Short.MAX_VALUE))))
                 .addContainerGap(34, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -614,7 +647,9 @@ public class Kursach extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(bHistory, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(bDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -622,7 +657,7 @@ public class Kursach extends javax.swing.JFrame {
                                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jLabel1)
-                                        .addComponent(jFormattedTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(jTextS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(6, 6, 6)
                                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -633,12 +668,12 @@ public class Kursach extends javax.swing.JFrame {
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
                             .addComponent(jLabel3)
-                            .addComponent(jFormattedTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jFormattedTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jTextP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextPyd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(jFormattedTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(jTextN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(73, Short.MAX_VALUE))
         );
 
@@ -668,9 +703,19 @@ public class Kursach extends javax.swing.JFrame {
 
         buttonGroup5.add(jTable5Number1);
         jTable5Number1.setText("ЭФ");
+        jTable5Number1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTable5Number1ActionPerformed(evt);
+            }
+        });
 
         buttonGroup5.add(jTable5Number2);
         jTable5Number2.setText("1Ф");
+        jTable5Number2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTable5Number2ActionPerformed(evt);
+            }
+        });
 
         buttonGroup7.add(jTable6Number1);
         jTable6Number1.setText("Cu");
@@ -682,6 +727,11 @@ public class Kursach extends javax.swing.JFrame {
 
         buttonGroup7.add(jTable6Number2);
         jTable6Number2.setText("Al");
+        jTable6Number2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTable6Number2ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setText("Удельный проход");
 
@@ -696,6 +746,8 @@ public class Kursach extends javax.swing.JFrame {
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "1,5", "2,5", "4", "6", "10", "16", "25", "35", "50", "70", "95", " " }));
 
+        jFormattedTextField5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
         jPanel8.setLayout(jPanel8Layout);
         jPanel8Layout.setHorizontalGroup(
@@ -706,6 +758,7 @@ public class Kursach extends javax.swing.JFrame {
                     .addComponent(jTable5Number2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTable6Number2)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jTable6Number1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -715,10 +768,9 @@ public class Kursach extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6))
-                    .addComponent(jTable6Number2))
+                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jFormattedTextField5, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                .addComponent(jFormattedTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel8Layout.setVerticalGroup(
@@ -759,6 +811,8 @@ public class Kursach extends javax.swing.JFrame {
 
         jLabel7.setText("lдоп");
 
+        jFormattedTextField6.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
         jPanel9Layout.setHorizontalGroup(
@@ -788,6 +842,25 @@ public class Kursach extends javax.swing.JFrame {
 
         jPanel10.setBorder(javax.swing.BorderFactory.createTitledBorder("Интерполяция"));
 
+        jFormattedTextField7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField9.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField10.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField11.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField12.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jButton1.setText("Ø");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
@@ -805,22 +878,28 @@ public class Kursach extends javax.swing.JFrame {
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jFormattedTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jFormattedTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFormattedTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel10Layout.createSequentialGroup()
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextField7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFormattedTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFormattedTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jFormattedTextField10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFormattedTextField11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jFormattedTextField12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder("Расчёт питающих линий"));
@@ -843,17 +922,38 @@ public class Kursach extends javax.swing.JFrame {
 
         jLabel16.setText("Cos(Phi)");
 
+        jFormattedTextField13.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField14.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField15.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField16.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
         jFormattedTextField16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFormattedTextField16ActionPerformed(evt);
             }
         });
 
+        jFormattedTextField17.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField18.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+        jFormattedTextField18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jFormattedTextField18ActionPerformed(evt);
+            }
+        });
+
+        jFormattedTextField19.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
         jFormattedTextField19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFormattedTextField19ActionPerformed(evt);
             }
         });
+
+        jFormattedTextField20.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
+
+        jFormattedTextField21.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter()));
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);
@@ -897,7 +997,7 @@ public class Kursach extends javax.swing.JFrame {
                     .addComponent(jFormattedTextField20, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField21, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFormattedTextField19, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47))
+                .addGap(40, 40, 40))
         );
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -939,10 +1039,10 @@ public class Kursach extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, 402, Short.MAX_VALUE))
-                .addContainerGap(44, Short.MAX_VALUE))
+                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -965,7 +1065,7 @@ public class Kursach extends javax.swing.JFrame {
             .addGroup(jDesktopPane2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         jDesktopPane2Layout.setVerticalGroup(
             jDesktopPane2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1010,35 +1110,7 @@ public class Kursach extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTable6Number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable6Number1ActionPerformed
-    
-        Map<String, Integer[] > a1 = new HashMap<String, Integer[]>();
 
-        Integer[] b1 = {3, 5};
-        a1.put("ПВ", b1);
-        
-        Integer[] b2 = {1};
-        a1.put("ПУНП", b2);
-        
-        Integer[] b3 = {1};
-        a1.put("ВВГ", b3);
-        
-        Map<String, Double[] > a2 = new HashMap<String, Double[]>();
-        
-        Double[] b11 = {1.5, 2.5, 4.0, 6.0, 10.0, 16.0, 25.0, 35.0, 50.0, 70.0, 95.0};
-        a2.put("ПВ", b11);
-        
-        Double[] b22 = {1.5, 2.5, 4.0};
-        a2.put("ПУНП", b22);
-        
-        //Double[] b33 = {1.5, 2.5, 4.0, 6.0, 10.0, 16.0, 25.0, 35.0, 50.0, 70.0, 95.0};
-        a2.put("ВВГ", b11);
-        
-        Double[] res = a2.get("ПУНП");
-        for(double r : res){
-            System.out.println(r);
-        }
-        
-        //a.put("0", "Васька");
     }//GEN-LAST:event_jTable6Number1ActionPerformed
 
     private void jTable7Number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable7Number1ActionPerformed
@@ -1067,116 +1139,79 @@ public class Kursach extends javax.swing.JFrame {
         Double[] b22 = {1.5, 2.5, 4.0};
         a2.put("ПУНП", b22);
         
-        //Double[] b33 = {1.5, 2.5, 4.0, 6.0, 10.0, 16.0, 25.0, 35.0, 50.0, 70.0, 95.0};
         a2.put("ВВГ", b11);
         
         Double[] res = a2.get("ВВГ");
         for(double r : res){
             System.out.println(r);
         }
-        
-        //Map<String, String> a = new HashMap<String, String>();
-        
-        //a.put("0", "Васька");
-        //a.put("0", "Васька");
-        //a.put("0", "Васька");
-       //хэшмеп, ассоциативный массив
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
-    private void jFormattedTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField1ActionPerformed
+    private void jTextSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextSActionPerformed
         // TODO add your handling code here:
+        square = Double.parseDouble(jTextS.getText());
+        result();
+    }//GEN-LAST:event_jTextSActionPerformed
 
-    }//GEN-LAST:event_jFormattedTextField1ActionPerformed
+    private void bHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHistoryActionPerformed
+        JOptionPane.showMessageDialog(null, "ERROR!!!");
+    }//GEN-LAST:event_bHistoryActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void jLux50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLux50ActionPerformed
 
-    private void jTable1Number50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable1Number50ActionPerformed
-        if(jTable1Number50.isSelected()){
-                        
-            
+    }//GEN-LAST:event_jLux50ActionPerformed
 
-        }
+    private void jLux30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLux30ActionPerformed
 
-    }//GEN-LAST:event_jTable1Number50ActionPerformed
+    }//GEN-LAST:event_jLux30ActionPerformed
 
-    private void jTable1Number30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable1Number30ActionPerformed
-        // TODO add your handling code here:
-        if(jTable1Number20.isSelected()){
-            double a = 30;
-        }
-    }//GEN-LAST:event_jTable1Number30ActionPerformed
+    private void jLux20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLux20ActionPerformed
 
-    private void jTable1Number20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable1Number20ActionPerformed
-        // TODO add your handling code here:
-        if(jTable1Number20.isSelected()){
-           jFormattedTextField3.setText(jTable1Number20.getText());
-        }
-    }//GEN-LAST:event_jTable1Number20ActionPerformed
+    }//GEN-LAST:event_jLux20ActionPerformed
 
-    private void jTable1Number10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable1Number10ActionPerformed
-        // TODO add your handling code here:
-        //number = 10;
-    }//GEN-LAST:event_jTable1Number10ActionPerformed
+    private void jLux10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLux10ActionPerformed
 
-    private void jTable1Number5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable1Number5ActionPerformed
-        // TODO add your handling code here:
-        //number = 5;
+    }//GEN-LAST:event_jLux10ActionPerformed
 
-        buttonGroup1.add(jTable1Number5);
-        buttonGroup1.add(jTable1Number10);
+    private void jLux5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLux5ActionPerformed
 
-        double jRadioButton4 = 5;
-        double jRadioButton5 = 10;
+    }//GEN-LAST:event_jLux5ActionPerformed
 
-        if (jRadioButton4==5){
+    private void jHeight5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHeight5ActionPerformed
+        formPane();
+    }//GEN-LAST:event_jHeight5ActionPerformed
 
-            //jTextField24.getText();
-            System.out.println("klick");
+    private void jHeight3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHeight3ActionPerformed
+        formPane();
+    }//GEN-LAST:event_jHeight3ActionPerformed
 
-        }
+    private void jHeight2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jHeight2ActionPerformed
+        formPane();
+    }//GEN-LAST:event_jHeight2ActionPerformed
 
-    }//GEN-LAST:event_jTable1Number5ActionPerformed
-
-    private void jTable3Number5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable3Number5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTable3Number5ActionPerformed
-
-    private void jTable3Number3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable3Number3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTable3Number3ActionPerformed
-
-    private void jTable3Number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable3Number2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTable3Number2ActionPerformed
-
-    private void jTable4Number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable4Number1ActionPerformed
-        mymethod();
+    private void jLampFluorescentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLampFluorescentActionPerformed
+        method();
+        formLamp();
+        jRatedPpower40.setEnabled(false);
+        jRatedPpower60.setEnabled(false);
+        jRatedPpower100.setEnabled(false);
+        jRatedPpower150.setEnabled(false);
+        jRatedPpower200.setEnabled(false);
         
-        jTable2Number40.setEnabled(false);
-        jTable2Number60.setEnabled(false);
-        jTable2Number100.setEnabled(false);
-        jTable2Number150.setEnabled(false);
-        jTable2Number200.setEnabled(false);
-        
-        jTable2Number80.setEnabled(true);
-       
-        //
-    }//GEN-LAST:event_jTable4Number1ActionPerformed
+        jRatedPpower80.setEnabled(true);
+    }//GEN-LAST:event_jLampFluorescentActionPerformed
 
     
-    private void jTable4Number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable4Number2ActionPerformed
-        // TODO add your handling code here:
-        //jTable2Number40.setEnabled(true);
-        jTable2Number40.setEnabled(true);
-        jTable2Number60.setEnabled(true);
-        jTable2Number100.setEnabled(true);
-        jTable2Number150.setEnabled(true);
-        jTable2Number200.setEnabled(true);
+    private void jLampFilamentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLampFilamentActionPerformed
+        formLamp();
+        jRatedPpower40.setEnabled(true);
+        jRatedPpower60.setEnabled(true);
+        jRatedPpower100.setEnabled(true);
+        jRatedPpower150.setEnabled(true);
+        jRatedPpower200.setEnabled(true);
         
-        jTable2Number80.setEnabled(false);
-    }//GEN-LAST:event_jTable4Number2ActionPerformed
+        jRatedPpower80.setEnabled(false);
+    }//GEN-LAST:event_jLampFilamentActionPerformed
 
     private void jFormattedTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField16ActionPerformed
         // TODO add your handling code here:
@@ -1186,51 +1221,163 @@ public class Kursach extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jFormattedTextField19ActionPerformed
 
-    private void jTable2Number40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number40ActionPerformed
+    private void jRatedPpower40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower40ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTable2Number40ActionPerformed
+    }//GEN-LAST:event_jRatedPpower40ActionPerformed
 
-    private void jTable2Number80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number80ActionPerformed
+    private void jRatedPpower80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower80ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTable2Number80ActionPerformed
+    }//GEN-LAST:event_jRatedPpower80ActionPerformed
 
-    private void jTable2Number150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number150ActionPerformed
+    private void jRatedPpower150ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower150ActionPerformed
         
-    }//GEN-LAST:event_jTable2Number150ActionPerformed
+    }//GEN-LAST:event_jRatedPpower150ActionPerformed
 
-    private void jTable2Number60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number60ActionPerformed
+    private void jRatedPpower60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower60ActionPerformed
     
-    }//GEN-LAST:event_jTable2Number60ActionPerformed
+    }//GEN-LAST:event_jRatedPpower60ActionPerformed
 
-    private void jTable2Number100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number100ActionPerformed
+    private void jRatedPpower100ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower100ActionPerformed
     
-    }//GEN-LAST:event_jTable2Number100ActionPerformed
+    }//GEN-LAST:event_jRatedPpower100ActionPerformed
 
-    private void jTable2Number200ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable2Number200ActionPerformed
+    private void jRatedPpower200ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRatedPpower200ActionPerformed
     
-    }//GEN-LAST:event_jTable2Number200ActionPerformed
+    }//GEN-LAST:event_jRatedPpower200ActionPerformed
 
-    private void jTable4Number3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable4Number3ActionPerformed
-    
-        jTable2Number40.setEnabled(true);
-        jTable2Number60.setEnabled(true);
-        jTable2Number100.setEnabled(true);
-        jTable2Number150.setEnabled(true);
-        jTable2Number200.setEnabled(true);
+    private void jLampHalogenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLampHalogenActionPerformed
+        formLamp();
+        jRatedPpower40.setEnabled(true);
+        jRatedPpower60.setEnabled(true);
+        jRatedPpower100.setEnabled(true);
+        jRatedPpower150.setEnabled(true);
+        jRatedPpower200.setEnabled(true);
         
-        jTable2Number80.setEnabled(true);
-    }//GEN-LAST:event_jTable4Number3ActionPerformed
+        jRatedPpower80.setEnabled(true);
+    }//GEN-LAST:event_jLampHalogenActionPerformed
 
-    private void jTable4Number4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable4Number4ActionPerformed
-    
-        jTable2Number40.setEnabled(true);
-        jTable2Number60.setEnabled(true);
-        jTable2Number100.setEnabled(true);
-        jTable2Number150.setEnabled(true);
-        jTable2Number200.setEnabled(true);
+    private void jLampLedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jLampLedActionPerformed
+        formLamp();
+        jRatedPpower40.setEnabled(true);
+        jRatedPpower60.setEnabled(true);
+        jRatedPpower100.setEnabled(true);
+        jRatedPpower150.setEnabled(true);
+        jRatedPpower200.setEnabled(true);
         
-        jTable2Number80.setEnabled(true);
-    }//GEN-LAST:event_jTable4Number4ActionPerformed
+        jRatedPpower80.setEnabled(true);
+    }//GEN-LAST:event_jLampLedActionPerformed
+
+    private void jTable6Number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable6Number2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTable6Number2ActionPerformed
+    /*private void q(){
+        String s = jTextS.getText();
+        String p = jTextP.getText();
+        String pyd = jTextPyd.getText();
+        String n = jTextN.getText();   
+        
+        double A = Double.parseDouble(p);
+        double B = Double.parseDouble(n);
+        double q = A + B;        
+        
+        jTextPyd.setText(Double.toString(q));   
+    }*/
+    private void jFormattedTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFormattedTextField18ActionPerformed
+       
+    }//GEN-LAST:event_jFormattedTextField18ActionPerformed
+
+    private void bDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bDeleteActionPerformed
+        jTextS.setText("");
+        jTextP.setText("");
+        jTextPyd.setText("");
+        jTextN.setText("");
+        //не работает:
+        jLux5.setSelected(false);
+        jLux10.setSelected(false);
+        jLux20.setSelected(false);
+        jLux30.setSelected(false);
+        jLux50.setSelected(false);
+        jLux70.setSelected(false);
+        jLux100.setSelected(false);
+        jLux150.setSelected(false);
+        jLux200.setSelected(false);
+        jLux300.setSelected(false);
+        jLux400.setSelected(false);
+        jLux500.setSelected(false);
+        jLux600.setSelected(false);
+        jLux750.setSelected(false);
+        jLux1000.setSelected(false);
+        jLux2000.setSelected(false);
+        jLux3000.setSelected(false);
+        jLux10000.setSelected(false);
+        jRatedPpower40.setSelected(false);
+        jRatedPpower60.setSelected(false);
+        jRatedPpower80.setSelected(false);
+        jRatedPpower100.setSelected(false);
+        jRatedPpower150.setSelected(false);
+        jRatedPpower200.setSelected(false);
+        jHeight2.setSelected(false);
+        jHeight3.setSelected(false);
+        jHeight5.setSelected(false);
+        jLampFluorescent.setSelected(false);
+        jLampFilament.setSelected(false);
+        jLampHalogen.setSelected(false);
+        jLampLed.setSelected(false);    
+    }//GEN-LAST:event_bDeleteActionPerformed
+
+    private void jTextPydActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPydActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextPydActionPerformed
+
+    private void jTable5Number1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable5Number1ActionPerformed
+        if(jTable5Number1.isSelected()){
+         jFormattedTextField18.setText(Double.toString(0.9));
+         jFormattedTextField17.setText(Double.toString(592.361));
+         jFormattedTextField19.setText(Double.toString(0.9));
+        }
+    }//GEN-LAST:event_jTable5Number1ActionPerformed
+
+    private void jTable5Number2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTable5Number2ActionPerformed
+        jFormattedTextField18.setText(Double.toString(1));
+         jFormattedTextField17.setText(Double.toString(592.361));
+         jFormattedTextField19.setText(Double.toString(0.9));
+    }//GEN-LAST:event_jTable5Number2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        jFormattedTextField5.setText("");
+        jFormattedTextField6.setText("");
+        jFormattedTextField7.setText("");
+        jFormattedTextField8.setText("");
+        jFormattedTextField9.setText("");
+        jFormattedTextField10.setText("");
+        jFormattedTextField11.setText("");
+        jFormattedTextField12.setText("");
+        jFormattedTextField13.setText("");
+        jFormattedTextField14.setText("");
+        jFormattedTextField15.setText("");
+        jFormattedTextField16.setText("");
+        jFormattedTextField17.setText("");
+        jFormattedTextField18.setText("");
+        jFormattedTextField19.setText("");
+        jFormattedTextField20.setText("");
+        jFormattedTextField21.setText("");
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextSKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextSKeyPressed
+
+    }//GEN-LAST:event_jTextSKeyPressed
+
+    private void jTextSKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextSKeyTyped
+
+    }//GEN-LAST:event_jTextSKeyTyped
+
+    private void jTextPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPActionPerformed
+
+    }//GEN-LAST:event_jTextPActionPerformed
+
+    private void jTextNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextNActionPerformed
+
+    }//GEN-LAST:event_jTextNActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1268,6 +1415,8 @@ public class Kursach extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton bDelete;
+    private javax.swing.JButton bHistory;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup buttonGroup3;
@@ -1281,7 +1430,6 @@ public class Kursach extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox3;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JDesktopPane jDesktopPane2;
-    private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField10;
     private javax.swing.JFormattedTextField jFormattedTextField11;
     private javax.swing.JFormattedTextField jFormattedTextField12;
@@ -1292,16 +1440,16 @@ public class Kursach extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField jFormattedTextField17;
     private javax.swing.JFormattedTextField jFormattedTextField18;
     private javax.swing.JFormattedTextField jFormattedTextField19;
-    private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField20;
     private javax.swing.JFormattedTextField jFormattedTextField21;
-    private javax.swing.JFormattedTextField jFormattedTextField3;
-    private javax.swing.JFormattedTextField jFormattedTextField4;
     private javax.swing.JFormattedTextField jFormattedTextField5;
     private javax.swing.JFormattedTextField jFormattedTextField6;
     private javax.swing.JFormattedTextField jFormattedTextField7;
     private javax.swing.JFormattedTextField jFormattedTextField8;
     private javax.swing.JFormattedTextField jFormattedTextField9;
+    private javax.swing.JRadioButton jHeight2;
+    private javax.swing.JRadioButton jHeight3;
+    private javax.swing.JRadioButton jHeight5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -1318,6 +1466,28 @@ public class Kursach extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JRadioButton jLampFilament;
+    private javax.swing.JRadioButton jLampFluorescent;
+    private javax.swing.JRadioButton jLampHalogen;
+    private javax.swing.JRadioButton jLampLed;
+    private javax.swing.JRadioButton jLux10;
+    private javax.swing.JRadioButton jLux100;
+    private javax.swing.JRadioButton jLux1000;
+    private javax.swing.JRadioButton jLux10000;
+    private javax.swing.JRadioButton jLux150;
+    private javax.swing.JRadioButton jLux20;
+    private javax.swing.JRadioButton jLux200;
+    private javax.swing.JRadioButton jLux2000;
+    private javax.swing.JRadioButton jLux30;
+    private javax.swing.JRadioButton jLux300;
+    private javax.swing.JRadioButton jLux3000;
+    private javax.swing.JRadioButton jLux400;
+    private javax.swing.JRadioButton jLux5;
+    private javax.swing.JRadioButton jLux50;
+    private javax.swing.JRadioButton jLux500;
+    private javax.swing.JRadioButton jLux600;
+    private javax.swing.JRadioButton jLux70;
+    private javax.swing.JRadioButton jLux750;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
@@ -1329,58 +1499,94 @@ public class Kursach extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JRadioButton jRatedPpower100;
+    private javax.swing.JRadioButton jRatedPpower150;
+    private javax.swing.JRadioButton jRatedPpower200;
+    private javax.swing.JRadioButton jRatedPpower40;
+    private javax.swing.JRadioButton jRatedPpower60;
+    private javax.swing.JRadioButton jRatedPpower80;
     private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JRadioButton jTable1Number10;
-    private javax.swing.JRadioButton jTable1Number100;
-    private javax.swing.JRadioButton jTable1Number1000;
-    private javax.swing.JRadioButton jTable1Number10000;
-    private javax.swing.JRadioButton jTable1Number150;
-    private javax.swing.JRadioButton jTable1Number20;
-    private javax.swing.JRadioButton jTable1Number200;
-    private javax.swing.JRadioButton jTable1Number2000;
-    private javax.swing.JRadioButton jTable1Number30;
-    private javax.swing.JRadioButton jTable1Number300;
-    private javax.swing.JRadioButton jTable1Number3000;
-    private javax.swing.JRadioButton jTable1Number400;
-    private javax.swing.JRadioButton jTable1Number5;
-    private javax.swing.JRadioButton jTable1Number50;
-    private javax.swing.JRadioButton jTable1Number500;
-    private javax.swing.JRadioButton jTable1Number600;
-    private javax.swing.JRadioButton jTable1Number70;
-    private javax.swing.JRadioButton jTable1Number750;
-    private javax.swing.JRadioButton jTable2Number100;
-    private javax.swing.JRadioButton jTable2Number150;
-    private javax.swing.JRadioButton jTable2Number200;
-    private javax.swing.JRadioButton jTable2Number40;
-    private javax.swing.JRadioButton jTable2Number60;
-    private javax.swing.JRadioButton jTable2Number80;
-    private javax.swing.JRadioButton jTable3Number2;
-    private javax.swing.JRadioButton jTable3Number3;
-    private javax.swing.JRadioButton jTable3Number5;
-    private javax.swing.JRadioButton jTable4Number1;
-    private javax.swing.JRadioButton jTable4Number2;
-    private javax.swing.JRadioButton jTable4Number3;
-    private javax.swing.JRadioButton jTable4Number4;
     private javax.swing.JRadioButton jTable5Number1;
     private javax.swing.JRadioButton jTable5Number2;
     private javax.swing.JRadioButton jTable6Number1;
     private javax.swing.JRadioButton jTable6Number2;
     private javax.swing.JRadioButton jTable7Number1;
     private javax.swing.JRadioButton jTable7Number2;
+    private javax.swing.JFormattedTextField jTextN;
+    private javax.swing.JFormattedTextField jTextP;
+    private javax.swing.JFormattedTextField jTextPyd;
+    private javax.swing.JFormattedTextField jTextS;
     // End of variables declaration//GEN-END:variables
-//private double number;
-//    Calc a = new Calc();
-    private void mymethod(){
+
+    private void method(){
         //энейбол!!!
-        jTable2Number40.setEnabled(true);
+        jRatedPpower40.setEnabled(true);
     }
-    private class AlSample implements ActionListener{
+    
+    private void formLamp(){
+        
+        formLamp = new HashMap<String, Integer>();
+        formLamp.put("Люминесцентные", 1);
+        formLamp.put("Накаливания", 2);
+        formLamp.put("Галогенные", 3);
+        formLamp.put("Светодиодные", 4);   
+    }
+    
+    private void formPane(){
+        formPane = new HashMap<String, Integer>();
+        formPane.put("2 - 3", 2);
+        formPane.put("3 - 4", 3);
+        formPane.put("4 - 6", 5);
+    }
+    
+    public void result(){
+        System.out.println(square);        
+        System.out.println(alLux);
+        System.out.println(alRatedPpower);
+        System.out.println(alHeight);
+        System.out.println(alLamp);
+        
+        double rez = alLux + alRatedPpower;
+        jTextPyd.setText(Double.toString(rez)); 
+    }
+    
+    private class ALLux implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e) {
             JRadioButton btn = (JRadioButton)e.getSource(); 
-            System.out.println(btn.getText());
-        }
+            alLux = Integer.parseInt(btn.getText());
+            result();
+            }
+    }
     
-}
+    private class ALRatedPpower implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JRadioButton btn = (JRadioButton)e.getSource(); 
+            alRatedPpower = Integer.parseInt(btn.getText());
+            result();
+            }
+    }
+    
+    private class ALHeight implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JRadioButton btn = (JRadioButton)e.getSource(); 
+            alHeight = formPane.get(btn.getText());
+            result();
+            }
+    }
+    
+    private class ALLamp implements ActionListener{
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            JRadioButton btn = (JRadioButton)e.getSource(); 
+            alLamp = formLamp.get(btn.getText());
+            result();
+            }
+    }
 }
