@@ -1,4 +1,4 @@
-
+﻿
 package phonebook;
 //подключаемые пакеты классов
 import java.awt.*;
@@ -36,7 +36,7 @@ public class Phonebook
     public Phonebook()
     {
         // создаем фрем
-        f=new JFrame("Записная книга");
+        f=new JFrame("Телефонная книга");
         // установка его размера
         f.setSize(500,300);
         // установка закрытия по нажатию на крестик
