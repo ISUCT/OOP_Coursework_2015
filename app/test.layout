@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
-  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="791px"/>
   <Label cursor="0" name="label" parent="view" prefHeight="20px" prefWidth="140px" text="label">
-    <AnchorsPaneConstraints height="20px" left="80px" top="60px" width="140px"/>
+    <AnchorsPaneConstraints height="20px" left="460px" top="30px" width="140px"/>
   </Label>
   <Button cursor="0" name="button" parent="view" prefHeight="20px" prefWidth="70px" text="button">
     <AnchorsPaneConstraints height="20px" right="40px" top="30px" width="70px"/>
   </Button>
   <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="150px" text="textField">
-    <AnchorsPaneConstraints height="30px" left="80px" top="20px" width="150px"/>
+    <AnchorsPaneConstraints height="30px" left="310px" top="10px" width="150px"/>
   </TextField>
-  <ModelGrid cursor="0" data="qtest" name="modelGrid" parent="view" prefHeight="100px" prefWidth="380px">
-    <AnchorsPaneConstraints bottom="110px" left="10px" right="10px" top="90px"/>
+  <ModelGrid cursor="0" data="qtest" name="modelGrid" parent="view" prefHeight="100px" prefWidth="311px">
+    <AnchorsPaneConstraints bottom="110px" left="470px" right="10px" top="90px"/>
     <ServiceGridColumn name="colService" resizable="true"/>
-    <ModelGridColumn field="educationform_id" name="colEducationform_id" title="colEducationform_id" width="173px">
+    <ModelGridColumn field="educationform_id" name="colEducationform_id" title="colEducationform_id" width="138px">
       <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
     </ModelGridColumn>
-    <ModelGridColumn field="name" name="colName" title="colName" width="172px">
+    <ModelGridColumn field="name" name="colName" title="colName" width="138px">
       <ModelFormattedField format=""/>
     </ModelGridColumn>
   </ModelGrid>
@@ -24,5 +24,20 @@
   </Button>
   <Button cursor="0" name="button2" parent="view" prefHeight="20px" prefWidth="70px" text="button2">
     <AnchorsPaneConstraints bottom="30px" height="20px" right="40px" width="70px"/>
+  </Button>
+  <TabbedPane cursor="0" name="tabbedPane" parent="view" prefHeight="240px" prefWidth="440px">
+    <AnchorsPaneConstraints height="240px" left="10px" top="50px" width="440px"/>
+  </TabbedPane>
+  <AnchorsPane background="#ffffff" cursor="0" name="panel" parent="tabbedPane" prefHeight="203px" prefWidth="432px">
+    <TabbedPaneConstraints tabTitle="tab0"/>
+  </AnchorsPane>
+  <AnchorsPane background="#ffffff" cursor="0" name="panel1" parent="tabbedPane" prefHeight="203px" prefWidth="432px" visible="false">
+    <TabbedPaneConstraints tabTitle="tab1"/>
+  </AnchorsPane>
+  <Button cursor="0" name="button3" parent="view" prefHeight="20px" prefWidth="70px" text="pnl1">
+    <AnchorsPaneConstraints height="20px" left="10px" top="20px" width="70px"/>
+  </Button>
+  <Button cursor="0" name="button4" parent="view" prefHeight="20px" prefWidth="70px" text="pnl2">
+    <AnchorsPaneConstraints height="20px" left="90px" top="20px" width="70px"/>
   </Button>
 </layout>

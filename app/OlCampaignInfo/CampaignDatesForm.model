@@ -1,3 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <entity Name="QCampaignDates" Title="" entityHeight="298" entityIconified="false" entityId="143202877228647" entityLocationX="188" entityLocationY="6" entityWidth="297" queryId="QCampaignDates" tableName="" tableSchemaName=""/>
+  <entity Name="QCampaignDates" Title="" entityHeight="200" entityIconified="false" entityId="143325096515222" entityLocationX="78" entityLocationY="35" entityWidth="150" queryId="QCampaignDates" tableName="" tableSchemaName=""/>
 </datamodel>

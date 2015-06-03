@@ -1,8 +1,8 @@
 /**
  *
  * @author nadia
- * @name QCampaignDates
+ * @name QAdmissionVolume
  * @public
  */ 
 Select * 
-From CAMPAIGNDATE t1
+From ADMISSIONVOLUME t1

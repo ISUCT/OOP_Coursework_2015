@@ -26,4 +26,14 @@ function CampaignsForm() {
     form.button1.onActionPerformed = function(event) {
         model.save();
     };
+    form.button2.onActionPerformed = function(event) {
+        P.Logger.info("Hello collumn");
+        var frm = new EducationFormsForm(model.QCampaigns.cursor.uid);
+        frm.show();
+    };
+    form.button3.onActionPerformed = function(event) {
+        P.Logger.info("Hello collumn");
+        var frm = new EducationLevelsForm(model.QCampaigns.cursor.uid);
+        frm.show();
+    };
 }

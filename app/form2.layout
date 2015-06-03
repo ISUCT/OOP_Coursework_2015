@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="171px" prefWidth="176px"/>
+  <AnchorsPane background="#d31818" cursor="0" name="panel" parent="view" prefHeight="100px" prefWidth="100px">
+    <AnchorsPaneConstraints bottom="41px" left="40px" right="36px" top="30px"/>
+  </AnchorsPane>
+</layout>

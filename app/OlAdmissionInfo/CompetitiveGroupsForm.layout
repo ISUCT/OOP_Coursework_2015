@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="327px" prefWidth="619px"/>
+  <ModelGrid cursor="0" data="QCompetitiveGroups" name="modelGrid" parent="view" prefHeight="260px" prefWidth="590px">
+    <AnchorsPaneConstraints height="260px" left="10px" top="10px" width="590px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="course" name="colCourse" title="Курс" width="278px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="name" name="colName" title="Наименование конкурсной группы" width="277px">
+      <ModelFormattedField/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

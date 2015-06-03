@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="358px" prefWidth="743px"/>
+  <ModelGrid cursor="0" data="QAdmissionVolume" name="modelGrid" parent="view" prefHeight="310px" prefWidth="690px">
+    <AnchorsPaneConstraints height="310px" left="20px" right="33px" top="10px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="course" name="colCourse" title="Курс" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="directionid" name="colDirectionid" title="ИД Направления подготовки" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberburgeto" name="colNumberburgeto" title="Бюджетные места очной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberburgetoz" name="colNumberburgetoz" title="Бюджетные места очно-заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberburgetz" name="colNumberburgetz" title="Бюджетные места заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberpaido" name="colNumberpaido" title="Места с оплатой обучения очной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberpaidoz" name="colNumberpaidoz" title="Места с оплатой обучения очно-заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberpaidz" name="colNumberpaidz" title="Места с оплато обучения заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numbertargeto" name="colNumbertargeto" title="Места целевого приема очной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numbertargetoz" name="colNumbertargetoz" title="Места целевого приема очно-заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numbertargetz" name="colNumbertargetz" title="Места целевого приема заочной формы" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberquotao" name="colNumberquotao" title="Квота приема лиц, имеющих особое право(очная форма)" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberquotaoz" name="colNumberquotaoz" title="Квота приема лиц, имеющих особое право(очно-заочная форма)" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="numberquotaz" name="colNumberquotaz" title="Квота приема лиц, имеющих особое право(заочная форма)" width="75px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

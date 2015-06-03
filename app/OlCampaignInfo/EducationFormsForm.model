@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="QEducationForms_1" Title="" entityHeight="200" entityIconified="false" entityId="143325187223441" entityLocationX="346" entityLocationY="44" entityWidth="150" queryId="QEducationForms_1" tableName="" tableSchemaName=""/>
+  <entity Name="QEducationForms" Title="" entityHeight="200" entityIconified="false" entityId="143325187364981" entityLocationX="139" entityLocationY="19" entityWidth="150" queryId="QEducationForms" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="eForms" leftEntityFieldName="educationforms_id" leftEntityId="143325187364981" rightEntityFieldName="educationform_id" rightEntityId="143325187223441" scalarPropertyName="eForm"/>
+</datamodel>

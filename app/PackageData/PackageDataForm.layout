@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+<?xml version="1.0" encoding="UTF-8"?><layout title="Формочка" view="view">
   <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
   <Button cursor="0" name="button" parent="view" prefHeight="40px" prefWidth="360px" text="Списки лиц, рекомендованных к зачислению">
     <AnchorsPaneConstraints height="40px" left="20px" right="20px" top="220px"/>

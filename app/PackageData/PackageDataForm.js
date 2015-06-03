@@ -19,11 +19,12 @@ function PackageDataForm() {
     });
     
     form.button.onActionPerformed = function(event) {
-        var f = new RecListsForm();
+        var f = new RecommendedListsForm();
         f.show();
     };
     form.button4.onActionPerformed = function(event) {
-        // TODO Добавьте здесь свой код
+        var f = new OrdersOfAdmissionForm();
+        f.showModal();
     };
     form.button1.onActionPerformed = function(event) {
        var f = new CampaignsForm();

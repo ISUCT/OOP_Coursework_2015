@@ -1,8 +1,8 @@
 /**
  *
  * @author nadia
- * @name QCampaignDates
+ * @name QEducationLevels
  * @public
  */ 
 Select * 
-From CAMPAIGNDATE t1
+From EDUCATIONLEVEL t1

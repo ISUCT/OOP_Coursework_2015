@@ -2,7 +2,12 @@
  * 
  * @author nadia
  */
-function AdmissionInfoForm() {
+function EducationLevelsForm() {
+        var id;
+    if (arguments.length>0){
+        id = arguments[0];
+    }
+    
     var self = this
             , model = P.loadModel(this.constructor.name)
             , form = P.loadForm(this.constructor.name, model);
@@ -12,16 +17,11 @@ function AdmissionInfoForm() {
     };
     
     // TODO : place your code here
-    
+    if (id){
+        model.QEducationLevels.params.id = id;
+    }
     model.requery(function () {
         // TODO : place your code here
     });
     
-    form.button.onActionPerformed = function(event) {
-       var f = new AdmissionVolumeForm();
-        f.show();
-    };
-    form.button1.onActionPerformed = function(event) {
-        // TODO Добавьте здесь свой код
-    };
 }

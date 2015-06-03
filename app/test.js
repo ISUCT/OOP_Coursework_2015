@@ -37,4 +37,14 @@ function test() {
     form.label.onMouseClicked = function(event) {
         // TODO Добавьте здесь свой код
     };
+    form.button3.onActionPerformed = function(event) {
+        form.panel.clear();
+        var frm1 = new form1();
+        frm1.showOnPanel(form.panel);
+    };
+    form.button4.onActionPerformed = function(event) {
+        form.panel.clear();
+        var frm1 = new form2();
+        frm1.showOnPanel(form.panel);// TODO Добавьте здесь свой код
+    };
 }

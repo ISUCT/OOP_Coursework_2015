@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
   <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
-  <ModelGrid cursor="0" name="modelGrid" parent="view" prefHeight="240px" prefWidth="320px">
-    <AnchorsPaneConstraints height="240px" left="20px" top="10px" width="320px"/>
-  </ModelGrid>
+  <Button cursor="0" name="button" parent="view" prefHeight="80px" prefWidth="320px" text="Объем приема (контрольные цифры)">
+    <AnchorsPaneConstraints height="80px" left="40px" top="50px" width="320px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="80px" prefWidth="320px" text="Конкурсные группы">
+    <AnchorsPaneConstraints height="80px" left="40px" top="170px" width="320px"/>
+  </Button>
 </layout>

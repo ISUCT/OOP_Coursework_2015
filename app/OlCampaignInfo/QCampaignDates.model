@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?><datamodel>
-  <parameters>
-    <parameter description="" name="campaignID" nullable="true" parameterMode="1" precision="0" scale="0" selectionForm="null" signed="true" size="0" type="3" typeName="DECIMAL"/>
-  </parameters>
   <parametersEntity entityHeight="200" entityIconified="false" entityLocationX="8" entityLocationY="7" entityWidth="150"/>
-  <entity Title="" entityHeight="200" entityIconified="false" entityId="143193679269898" entityLocationX="243" entityLocationY="13" entityWidth="319" tableAlias="t1" tableName="CAMPAIGNDATE" tableSchemaName=""/>
-  <relation leftEntityId="-1" leftEntityParameterName="campaignID" rightEntityFieldName="campaign_id" rightEntityId="143193679269898"/>
+  <entity Title="" entityHeight="200" entityIconified="false" entityId="143325092182577" entityLocationX="270" entityLocationY="46" entityWidth="150" tableAlias="t1" tableName="CAMPAIGNDATE" tableSchemaName=""/>
 </datamodel>

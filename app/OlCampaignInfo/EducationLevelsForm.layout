@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="328px" prefWidth="460px"/>
+  <ModelGrid cursor="0" data="QEducationLevels" name="modelGrid" parent="view" prefHeight="270px" prefWidth="330px">
+    <AnchorsPaneConstraints height="270px" left="70px" top="30px" width="330px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="educationlevel_id" name="colEducationlevel_id" title="colEducationlevel_id" width="148px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="course" name="colCourse" title="colCourse" width="147px">
+      <ModelSpin max="1.7976931348623157E308" min="-1.7976931348623157E308"/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

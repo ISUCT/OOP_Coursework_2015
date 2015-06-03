@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <ModelGrid cursor="0" data="QEducationForms" name="modelGrid" parent="view" prefHeight="250px" prefWidth="380px">
+    <AnchorsPaneConstraints height="250px" left="10px" top="10px" width="380px"/>
+    <ServiceGridColumn name="colService"/>
+    <ModelGridColumn field="eForm" name="colEducationforms_id" title="colEducationforms_id" width="345px">
+      <ModelCombo displayField="name" displayList="QEducationForms_1"/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Button cursor="0" name="btnSave" parent="view" prefHeight="20px" prefWidth="70px" text="Save">
+    <AnchorsPaneConstraints bottom="10px" height="20px" right="20px" width="70px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="20px" prefWidth="70px" text="button1">
+    <AnchorsPaneConstraints bottom="10px" height="20px" left="230px" width="70px"/>
+  </Button>
+</layout>
