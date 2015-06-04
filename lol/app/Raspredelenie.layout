@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <Button cursor="0" name="button" parent="view" prefHeight="30px" prefWidth="90px" text="Добавить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="10px" width="90px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="30px" prefWidth="90px" text="Удалить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="110px" width="90px"/>
+  </Button>
+  <Button cursor="0" name="button2" parent="view" prefHeight="30px" prefWidth="90px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="210px" width="90px"/>
+  </Button>
+  <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="130px">
+    <AnchorsPaneConstraints height="30px" left="180px" right="90px" top="10px"/>
+  </TextField>
+  <Button cursor="0" name="button3" parent="view" prefHeight="30px" prefWidth="60px" text="Поиск">
+    <AnchorsPaneConstraints height="30px" right="20px" top="10px" width="60px"/>
+  </Button>
+  <TextField cursor="0" name="textField1" parent="view" prefHeight="30px" prefWidth="130px">
+    <AnchorsPaneConstraints height="30px" left="180px" right="90px" top="50px"/>
+  </TextField>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="30px" prefWidth="160px" text="По преподавателям">
+    <AnchorsPaneConstraints height="30px" left="10px" top="10px" width="160px"/>
+  </Label>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label1" parent="view" prefHeight="30px" prefWidth="160px" text="По Дисциплинам">
+    <AnchorsPaneConstraints height="30px" left="0px" top="50px" width="160px"/>
+  </Label>
+  <Button cursor="0" name="button5" parent="view" prefHeight="30px" prefWidth="60px" text="Поиск">
+    <AnchorsPaneConstraints height="30px" right="20px" top="50px" width="60px"/>
+  </Button>
+  <ModelGrid cursor="0" data="qRaspredelenie" name="modelGrid" parent="view" prefHeight="150px" prefWidth="380px">
+    <AnchorsPaneConstraints bottom="60px" left="10px" right="10px" top="90px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="disciplinee" name="colDiscipline" title="colDiscipline" width="75px">
+      <ModelCombo displayField="disciplinec" displayList="qPoiskD"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="teachere" name="colTeacher" title="colTeacher" width="75px">
+      <ModelCombo displayField="surname" displayList="qPoiskT"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="teachere" name="colTeacher1" title="colTeacher1" width="75px">
+      <ModelCombo displayField="name" displayList="qPoiskT"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="teachere" name="colTeacher2" title="colTeacher2" width="75px">
+      <ModelCombo displayField="patronymic" displayList="qPoiskT"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="classe" name="colClass" title="colClass" width="75px">
+      <ModelCombo displayField="housing" displayList="qClasses"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="classe" name="colClass1" title="colClass1" width="75px">
+      <ModelCombo displayField="classroom" displayList="qClasses"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="timee" name="colTime" title="colTime" width="75px">
+      <ModelCombo displayField="timec" displayList="qTimes"/>
+    </ModelGridColumn>
+    <ModelGridColumn field="datee" name="colDate" title="colDate" width="75px">
+      <ModelCombo displayField="datec" displayList="qDates"/>
+    </ModelGridColumn>
+  </ModelGrid>
+</layout>

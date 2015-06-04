@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qPoiskD" Title="" entityHeight="200" entityIconified="false" entityId="143325035857555" entityLocationX="466" entityLocationY="268" entityWidth="150" queryId="qPoiskD" tableName="" tableSchemaName=""/>
+  <entity Name="qDates" Title="" entityHeight="200" entityIconified="false" entityId="143210505616892" entityLocationX="39" entityLocationY="26" entityWidth="150" queryId="qDates" tableName="" tableSchemaName=""/>
+  <entity Name="qTimes" Title="" entityHeight="200" entityIconified="false" entityId="143210506784382" entityLocationX="268" entityLocationY="282" entityWidth="150" queryId="qTimes" tableName="" tableSchemaName=""/>
+  <entity Name="qClasses" Title="" entityHeight="200" entityIconified="false" entityId="143210326330488" entityLocationX="520" entityLocationY="24" entityWidth="150" queryId="qClasses" tableName="" tableSchemaName=""/>
+  <entity Name="qPoiskT" Title="" entityHeight="200" entityIconified="false" entityId="143325035409151" entityLocationX="61" entityLocationY="263" entityWidth="150" queryId="qPoiskT" tableName="" tableSchemaName=""/>
+  <entity Name="qRaspredelenie" Title="" entityHeight="200" entityIconified="false" entityId="143210325085213" entityLocationX="255" entityLocationY="31" entityWidth="150" queryId="qRaspredelenie" tableName="" tableSchemaName=""/>
+  <referenceRelation collectionPropertyName="teacheres" leftEntityFieldName="teacher" leftEntityId="143210325085213" rightEntityFieldName="teachers_id" rightEntityId="143325035409151" scalarPropertyName="teachere"/>
+  <referenceRelation collectionPropertyName="classes" leftEntityFieldName="class" leftEntityId="143210325085213" rightEntityFieldName="classes_id" rightEntityId="143210326330488" scalarPropertyName="classe"/>
+  <referenceRelation collectionPropertyName="times" leftEntityFieldName="time" leftEntityId="143210325085213" rightEntityFieldName="times_id" rightEntityId="143210506784382" scalarPropertyName="timee"/>
+  <referenceRelation collectionPropertyName="disciplinese" leftEntityFieldName="discipline" leftEntityId="143210325085213" rightEntityFieldName="disciplines_id" rightEntityId="143325035857555" scalarPropertyName="disciplinee"/>
+  <referenceRelation collectionPropertyName="dates" leftEntityFieldName="date" leftEntityId="143210325085213" rightEntityFieldName="dates_id" rightEntityId="143210505616892" scalarPropertyName="datee"/>
+</datamodel>

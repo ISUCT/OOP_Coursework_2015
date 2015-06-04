@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <ScrollPane cursor="0" name="scrollPane" prefHeight="0px" prefWidth="0px"/>
+  <TextArea cursor="0" name="textArea" parent="scrollPane" prefHeight="98px" prefWidth="98px" text="textArea"/>
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <Button cursor="0" name="button" parent="view" prefHeight="50px" prefWidth="380px" text="Расписание">
+    <AnchorsPaneConstraints height="50px" left="10px" right="10px" top="80px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="50px" prefWidth="380px" text="Список преподавателей">
+    <AnchorsPaneConstraints height="50px" left="10px" right="10px" top="140px"/>
+  </Button>
+  <Button cursor="0" name="button2" parent="view" prefHeight="50px" prefWidth="380px" text="Список дисциплин">
+    <AnchorsPaneConstraints height="50px" left="10px" right="10px" top="200px"/>
+  </Button>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="40px" prefWidth="380px" text="Расписание работы преподавателей">
+    <AnchorsPaneConstraints height="40px" left="10px" right="10px" top="20px"/>
+  </Label>
+</layout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><layout title="" view="view">
+  <AnchorsPane background="#ffffff" cursor="0" name="view" prefHeight="300px" prefWidth="400px"/>
+  <Button cursor="0" name="button" parent="view" prefHeight="30px" prefWidth="100px" text="Добавить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="10px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button1" parent="view" prefHeight="30px" prefWidth="100px" text="Удалить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="120px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button2" parent="view" prefHeight="30px" prefWidth="100px" text="Сохранить">
+    <AnchorsPaneConstraints bottom="20px" height="30px" left="230px" width="100px"/>
+  </Button>
+  <Button cursor="0" name="button3" parent="view" prefHeight="30px" prefWidth="80px" text="Поиск">
+    <AnchorsPaneConstraints height="30px" left="200px" top="10px" width="80px"/>
+  </Button>
+  <TextField cursor="0" name="textField" parent="view" prefHeight="30px" prefWidth="180px">
+    <AnchorsPaneConstraints height="30px" left="10px" top="10px" width="180px"/>
+  </TextField>
+  <ModelGrid cursor="0" data="qPoiskD" name="modelGrid" parent="view" prefHeight="160px" prefWidth="380px">
+    <AnchorsPaneConstraints bottom="60px" left="10px" right="10px" top="80px"/>
+    <ServiceGridColumn name="colService" resizable="true"/>
+    <ModelGridColumn field="disciplinec" name="colDisciplinec" title="colDisciplinec" width="345px">
+      <ModelFormattedField format=""/>
+    </ModelGridColumn>
+  </ModelGrid>
+  <Label cursor="0" horizontalAlignment="0" horizontalTextPosition="0" name="label" parent="view" prefHeight="20px" prefWidth="380px" text="Общий список дисциплин">
+    <AnchorsPaneConstraints height="20px" left="10px" right="10px" top="50px"/>
+  </Label>
+</layout>

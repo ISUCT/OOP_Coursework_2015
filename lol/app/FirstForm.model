@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel>
+  <entity Name="qPoiskT" Title="" entityHeight="200" entityIconified="false" entityId="143325177742834" entityLocationX="416" entityLocationY="46" entityWidth="150" queryId="qPoiskT" tableName="" tableSchemaName=""/>
+  <entity Name="qPoiskD" Title="" entityHeight="200" entityIconified="false" entityId="143325178175811" entityLocationX="42" entityLocationY="27" entityWidth="150" queryId="qPoiskD" tableName="" tableSchemaName=""/>
+  <entity Name="qRaspredelenie" Title="" entityHeight="200" entityIconified="false" entityId="143324969852095" entityLocationX="213" entityLocationY="152" entityWidth="150" queryId="qRaspredelenie" tableName="" tableSchemaName=""/>
+  <referenceRelation leftEntityFieldName="discipline" leftEntityId="143324969852095" rightEntityFieldName="disciplines_id" rightEntityId="143325178175811"/>
+  <referenceRelation leftEntityFieldName="teacher" leftEntityId="143324969852095" rightEntityFieldName="teachers_id" rightEntityId="143325177742834"/>
+</datamodel>

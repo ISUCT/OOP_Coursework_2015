@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><datamodel datasource="niceWork">
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210235605076" entityLocationX="36" entityLocationY="42" entityWidth="150" tableName="Disciplines"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210244085510" entityLocationX="386" entityLocationY="19" entityWidth="150" tableName="Teachers"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210277177263" entityLocationX="33" entityLocationY="294" entityWidth="150" tableName="Dates"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210211052165" entityLocationX="217" entityLocationY="151" entityWidth="150" tableName="Raspredelenie"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210280565154" entityLocationX="388" entityLocationY="283" entityWidth="150" tableName="Times"/>
+  <fieldsEntity entityHeight="200" entityIconified="false" entityId="143210285557026" entityLocationX="216" entityLocationY="373" entityWidth="150" tableName="Classes"/>
+</datamodel>
